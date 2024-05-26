@@ -5,8 +5,9 @@
 }
 :root {
   --primaryColor: #af9a7d;
-  --mainBlack: #71a5ea;
+  --mainBlack: #0f233d;
   --mainSpacing: 3px;
+  --mainTransition:all;
 }
 
 /* globals */
@@ -17,7 +18,29 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
 }
-
+h1{
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    
+}
+.primary-btn{
+    display:inline-block;
+    text-decoration: none;
+    text-transform:uppercase;
+    letter-spacing: var(--mainSpacing);
+    color:var(--mainBlack);
+    background: var(--primaryColor);
+    padding:0.4rem 0.9rem;
+    border :3px solid var(--primaryColor) ;
+    transition: var(--mainTransition);
+ 
+}
+.primary-btn:hover{
+    background: transparent;
+    color: var(--primaryColor);
+    
+}
 /* NAVBAR */
 .navbar {
   position: fixed;
@@ -26,6 +49,7 @@ body {
   width: 100%;
   padding: 0.75rem 2rem; /* 12px 32px */
   z-index: 10;
+  background-color: aliceblue;
 }
 .nav-header {
   display: flex;
@@ -52,12 +76,13 @@ body {
   letter-spacing: var(--mainSpacing);
   text-align: center;
   padding: 1rem 0;
+  transition: var(--mainTransition);
 }
-/*
+
 .nav-links a:hover{
-    color:var(--primaryColor)
+    color:var(--primaryColor);
 }
-*/
+
 
 @media screen and (min-width: 768px) {
   .nav-btn {
@@ -82,3 +107,51 @@ body {
     padding:0.5rem 0;
 }
 }
+/*hero*/
+.hero{
+    min-height: calc(100vh - 66px);
+    background: url('./images/defaultBcg\ \(1\).jpeg') center/cover no-repeat;
+   /* background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;*/
+    display: flex;
+       justify-content: center;
+      align-items: center;
+
+}
+.banner{
+  background: rgba(53, 52, 52, 0.133);
+  color:white;
+  padding:2rem 1rem;
+  text-align: center;
+  letter-spacing:var(--mainSpacing)
+}
+.banner h1{
+  font-size: 2.5rem;
+}
+.banner div{
+  width: 10rem;
+  height: 5px;
+  background: var(--primaryColor);
+  margin: 1.7rem auto;
+}
+.banner p{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 576rem)
+{
+  .banner{
+    padding: 2rem 3rem;
+
+  }
+  .banner h1{
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 992rem)
+{
+  .banner{
+    padding: 2rem 3rem;
+
+  }
