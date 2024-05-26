@@ -69,6 +69,8 @@ body {
 }
 .nav-center {
   display: flex;
+  margin: 0 auto;
+  max-width: 1170px;
 }
 .nav-links {
   height: auto;
