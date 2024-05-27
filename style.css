@@ -8,8 +8,8 @@
   --mainBlack: #0f233d;
   --mainSpacing: 3px;
   --mainTransition:all;
+  --lightGrey: rgba(201, 237, 172, 0.444);
 }
-
 /* globals */
 body {
   padding-top: 66px;
@@ -22,7 +22,16 @@ h1{
     font-size: 3rem;
     line-height: 1;
     margin-bottom: 0.5rem;
-    
+    h4{
+      font-size: 3rem;
+      line-height: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    h6{
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
 }
 .primary-btn{
     display:inline-block;
@@ -119,6 +128,7 @@ h1{
       align-items: center;
 
 }
+/*title*/
 .banner{
   background: rgba(53, 52, 52, 0.133);
   color:white;
@@ -154,5 +164,62 @@ h1{
   .banner{
     padding: 2rem 3rem;
 
+  }
+}
+/*title*/
+.section-title{
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.section-title h4 {
+  font-size: 2rem;
+  letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.section-title div{
+width:5rem;
+height:5px;
+background: var(--primaryColor);
+margin: 0 auto;
+}
+/*services*/
+.services-container{
+  padding: 5rem 0;
+  background: var(--lightGrey);
+  text-align: center;
+}
+.services-grid{
+  width:90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(255px,1fr));
+  row-gap: 2rem;
+  column-gap: 50px;
+}
+.service span{
+  display: inline-block;
+  color:var(--primaryColor);
+  font-size: 2.5rem;
+  margin-bottom:1.5rem;
+}
+.service h6{
+  letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
+}
+.service p{
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (min-width:992px) {
+  .services-grid{
+    width:95vw;
+    max-width: 1170px;
+  }
+}
+@media screen and (min-width:992px) {
+  .service p{
+    width:100;
+    
   }
 }
