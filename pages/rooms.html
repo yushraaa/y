@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rooms</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main class="container">
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      />
+      <!--link css-->
+      <link rel="stylesheet" href="../style.css" />
+      <!-- NAVBAR -->
+      <header class="navbar">
+        <div class="nav-center">
+          <!-- MOBILE NAV -->
+          <nav class="nav-header">
+            <a href="../index.html">
+              <img src="../images/logo.svg" alt="Beach Resort" />
+            </a>
+
+            <button type="button" class="nav-btn">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </nav>
+
+          <!-- DESKTOP NAV -->
+          <ul class="nav-links">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">Rooms </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- NAVBAR -->
+      <!--hero-->
+      <section class="hero rooms-hero">
+        <div class="banner">
+          <h1>Our Rooms</h1>
+          <div></div>
+
+          <a href="../index.html" class="primary-btn">Our Rooms</a>
+        </div>
+      </section>
+      <!--hero-->
+      <section class="filter-container">
+        <div class="section-title">
+          <h4>Search rooms</h4>
+          <div></div>
+        </div>
+        <div class="filter-forms">
+          <div class="form-group">
+            <label for="room-type">Room Type</label>
+            <select name="room-type" class="form-control">
+              <option value="all">all</option>
+              <option value="single">single</option>
+              <option value="double">double</option>
+              <option value="presidental">presidental</option>
+            </select>
+          </div>
+          <!--room type-->
+          <!--capacity-->
+
+          <div class="form-group">
+            <label for="capacity">Capacity</label>
+            <select name="room-type" id="capacity" class="form-control">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <!--roomprice-->
+
+          <div class="form-group">
+            <label for="price">Room Price $600</label>
+            <input type="range" id="price" class="form-control" />
+          </div>
+          <!--room size-->
+
+          <div class="form-group">
+            <label for="roomSize">Room size </label>
+            <div class="size-inputs" id="size">
+              <input
+                type="number"
+                class="size-input"
+                id="size"
+                name="minSize"
+                value="0"
+              />
+              <input
+                type="number"
+                class="size-input"
+                name="maxSize"
+                value="1000"
+              />
+            </div>
+          </div>
+          <!--breakfast pets-->
+
+          <div class="form-group">
+            <div class="single-extra">
+              <input type="checkbox" name="pets" id="pets" />
+              <label for="pets">pets</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="single-extra">
+              <input type="checkbox" name="breakfast" id="breakfast" />
+              <label for="breakfast">breakfast</label>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
