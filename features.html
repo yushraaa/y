@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Featured Rooms</title>
-</head>
-<body>
-    Featured Rooms
-</body>
+    <!-- CONTENT DELIVERY NETWORK // CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- NAVBAR -->
+      <header class="navbar">
+        <div class="nav-center">
+          <!-- MOBILE NAV -->
+          <nav class="nav-header">
+            <a href="../index.html">
+              <img src="../images/logo.svg" alt="Beach Resort" />
+            </a>
+
+            <button type="button" class="nav-btn">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </nav>
+
+          <!-- DESKTOP NAV -->
+          <ul class="nav-links">
+            <li>
+              <a href="../index.html"></a>
+            </li>
+            <li>
+              <a href="./pages/rooms.html">Rooms </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- NAVBAR -->
+      <!--hero-->
+
+      <section class="hero rooms-hero">
+        <div class="banner">
+          <h1>Our Rooms</h1>
+          <div></div>
+
+          <a href="../index.html" class="primary-btn"> Rooms</a>
+        </div>
+      </section>
+      <!--hero-->
+      <!--room info-->
+      <section class="room-details">
+        <div class="room-images">
+          <img src="../images/details-1.jpeg" />
+          <img src="../images/details-2.jpeg" />
+          <img src="../images/details-3.jpeg" />
+        </div>
+        <div class="room-description">
+          <div class="details">
+            <h3>Details</h3>
+            <p>
+              Id amet dolore fugiat quis. Consequat cupidatat exercitation eu
+              est dolore ipsum ut ad. Amet ea sit fugiat fugiat minim eu elit in
+              voluptate. Voluptate veniam id et aute aliquip do dolor nulla qui
+              incididunt Lorem anim id deserunt.
+            </p>
+          </div>
+          <div class="info">
+            <h3>Info</h3>
+            <h6>price:$600</h6>
+            <h6>size:350sqft</h6>
+            <h6>breakfast included</h6>
+            <h6>max capacity:3 people</h6>
+            <h6>Pets allowed</h6>
+          </div>
+        </div>
+        <div class="room-extras">
+          <h6>extras</h6>
+          <ul class="extra-list">
+            <li>plush pillows and beddings</li>
+            <li>plush pillows and beddings</li>
+            <li>plush pillows and beddings</li>
+            <li>plush pillows and beddings</li>
+            <li>plush pillows and beddings</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
